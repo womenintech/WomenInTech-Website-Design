@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto:400,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+.display-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/*----------------*/
+/*HEADER*/
+/*----------------*/
+header {
+  position: relative;
+}
+
+header #logo {
+  display: block;
+  margin: auto;
+  width: 180px;
+  height: 140px;
+}
+
+header a.button{
+  padding: 10px 20px;
+  background: #ee8c05;
+  text-decoration: none;
+  color: #fff;
+}
+
+header .button-section {
+  text-align: center;
+}
+
+header input {
+  padding: 7px 3px;
+}
+
+header #social-icons {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 16px;
+  padding-right: 16px;
+  z-index: 10;
+}
+
+header #social-icons img{
+  width: 30px;
+  height: 30px;
+}
+
+
+/*----------------*/
+/*NAVIGATION BAR*/
+/*----------------*/
+#main-nav {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 1rem;
+}
+
+#main-nav .navbar-nav .nav-item .nav-link {
+  color: #000;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+
+#main-nav .navbar-nav .nav-item .nav-link:hover {
+  color: #ee8c05;
+}
+
+/*----------------*/
+/*LANDING IMAGE*/
+/*----------------*/
+
+section.landing-img{
+  height: 65vh;
+  position: relative;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+}
+
+#landing .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#landing  a {
+  padding: 15px 25px;
+  text-decoration: none;
+  border: 3px solid #fff;
+  color: #fff;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  font-size: 2rem;
+}
+
+#landing  a:hover {
+  border: 3px solid #ee8c05;
+  color: #fff;
+  background: #ee8c05;
+}
+
+/*----------------*/
+/*INTRO CONTENT*/
+/*----------------*/
+
+#intro .intro-wrap #intro-content {
+  font-size: 1.1rem;
+  color: #2c2e30;
+}
+
+#intro a.button {
+  padding: 6px 30px;
+  background: #9b4e98;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+#intro a.button:hover {
+  background: #652963;
+}
+
+#intro .intro-wrap .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3125s ease-in-out;
+}
+
+#intro .intro-wrap .card:hover {
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+#intro .intro-wrap .intro-cards .card-title {
+  font-size: 1rem;
+}
+
+#intro .intro-wrap .intro-cards .card-text {
+  font-size: 0.9rem;
+}
+
+.upcoming {
+  padding-left: 3rem;
+}
+
+#intro .upcoming .upcoming-wrap h5 {
+  border-bottom: 2px solid #6c757d;
+}
+
+#intro .upcoming .upcoming-wrap ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#intro .upcoming .upcoming-wrap ul li{
+  margin: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.19);
+}
+
+#intro .upcoming .upcoming-wrap ul li p{
+  margin: 0;
+}
+
+#intro .upcoming .upcoming-wrap ul li .date{
+  color: #000;
+  font-size: .85rem;
+}
+
+#intro .upcoming .upcoming-wrap ul li .category {
+  font-size: 0.75rem;
+}
+
+/*----------------*/
+/*PARTNERS*/
+/*----------------*/
+
+#partner h2, #partner p {
+  width: 100%;
+  text-align: center;
+}
+
+#partner h2 {
+  font-size: 2.7rem;
+  text-align: center;
+  font-weight: bold;
+  color: #2c2e30;
+  letter-spacing: 1px;
+}
+
+/*----------------*/
+/*EXTRAS*/
+/*----------------*/
+#back-top {
+  position: fixed;
+  color: #ee8c05;
+  right: 15px;
+  bottom: 15px;
+
+}
+
+
+/*----------------*/
+/*MEDIA QUERIES*/
+/*----------------*/
+
+/*cards*/
+@media (max-width: 1200px) {
+  
+#main-nav .navbar-nav .nav-item .nav-link {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+.upcoming {
+  padding-left: 15px;
+}
+  
+}
+
+@media (max-width: 992px) {
+
+header input {
+  display: none;
+}
+
+#landing  a {
+  padding: 12px 22px;
+  border: 2px solid #fff;
+  font-size: 1rem;
+}
+  
+#intro .intro-wrap .intro-cards .card {
+  width: 16rem !important;
+  margin: auto;
+  }
+  
+#intro .intro-wrap #intro-content {
+  text-align: justify;
+}
+  
+#partner h2 {
+  font-size: 2.2rem;
+}
+ 
+}
+
+@media (max-width: 768px) {
+
+header #logo {
+  width: 140px;
+  height: 100px;
+  margin-bottom: 1.2rem;
+}
+  
+header #social-icons img{
+  width: 22px;
+  height: 22px;
+}
+
+section.landing-img{
+  background-position: -140px 80px !important;
+}
+  
+}
+
